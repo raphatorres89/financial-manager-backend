@@ -16,7 +16,7 @@ public class MovimentoMapper {
                 .nome(movimentoDTO.getNome())
                 .parcela(movimentoDTO.getParcela())
                 .tipo(TipoMovimento.valueOf(movimentoDTO.getTipo()))
-                .vencimento(LocalDate.parse(movimentoDTO.getVencimento()))
+                .vencimento(movimentoDTO.getVencimento() != null ? LocalDate.parse(movimentoDTO.getVencimento()) : null)
                 .valor(BigDecimal.valueOf(movimentoDTO.getValor()))
                 .build();
     }
@@ -29,7 +29,7 @@ public class MovimentoMapper {
                 .nome(movimento.getNome())
                 .parcela(movimento.getParcela())
                 .tipo(movimento.getTipo().getNome())
-                .vencimento(movimento.getVencimento().format(DateTimeFormatter.ofPattern("yyyy-MM-dd")))
+                .vencimento(movimento.getVencimento() != null ? movimento.getVencimento().format(DateTimeFormatter.ofPattern("yyyy-MM-dd")) : null)
                 .valor(movimento.getValor().doubleValue())
                 .build();
     }

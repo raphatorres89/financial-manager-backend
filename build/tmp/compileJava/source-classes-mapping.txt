@@ -2,8 +2,9 @@ br/com/raphaowl/financialmanager/repositories/MovimentoRepository.java
  br.com.raphaowl.financialmanager.repositories.MovimentoRepository
 br/com/raphaowl/financialmanager/FinancialManagerApplication.java
  br.com.raphaowl.financialmanager.FinancialManagerApplication
-br/com/raphaowl/financialmanager/api/v1/mapper/MovimentoMapper.java
- br.com.raphaowl.financialmanager.api.v1.mapper.MovimentoMapper
+br/com/raphaowl/financialmanager/documents/Movimento.java
+ br.com.raphaowl.financialmanager.documents.Movimento
+ br.com.raphaowl.financialmanager.documents.Movimento$MovimentoBuilder
 br/com/raphaowl/financialmanager/enums/TipoMovimento.java
  br.com.raphaowl.financialmanager.enums.TipoMovimento
 br/com/raphaowl/financialmanager/api/v1/dto/MovimentoDTO.java
@@ -11,8 +12,7 @@ br/com/raphaowl/financialmanager/api/v1/dto/MovimentoDTO.java
  br.com.raphaowl.financialmanager.api.v1.dto.MovimentoDTO$MovimentoDTOBuilder
 br/com/raphaowl/financialmanager/services/MovimentoService.java
  br.com.raphaowl.financialmanager.services.MovimentoService
-br/com/raphaowl/financialmanager/documents/Movimento.java
- br.com.raphaowl.financialmanager.documents.Movimento
- br.com.raphaowl.financialmanager.documents.Movimento$MovimentoBuilder
+br/com/raphaowl/financialmanager/api/v1/mapper/MovimentoMapper.java
+ br.com.raphaowl.financialmanager.api.v1.mapper.MovimentoMapper
 br/com/raphaowl/financialmanager/api/v1/MovimentoApi.java
  br.com.raphaowl.financialmanager.api.v1.MovimentoApi
