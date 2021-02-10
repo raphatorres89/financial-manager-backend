@@ -36,4 +36,9 @@ public class MovimentoService {
         log.info("Deletando movimento: {}", movimento);
         movimentoRepository.delete(movimento);
     }
+
+    public List<Movimento> findByYearMonth(Integer year, Integer month) {
+        log.info("Buscando movimento pelo mês {}, ano {}", month, year);
+        return movimentoRepository.findByYearMonth(year, month);
+    }
 }

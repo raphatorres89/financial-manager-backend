@@ -20,8 +20,11 @@ public class MovimentoApi {
     private MovimentoService movimentoService;
 
     @GetMapping
-    public List<MovimentoDTO> findAll() {
-        return movimentoService.findAll().stream().map(movimento -> MovimentoMapper.from(movimento)).collect(Collectors.toList());
+    public List<MovimentoDTO> findByYearMonth(@RequestParam Integer year, @RequestParam Integer month) {
+        return movimentoService.findByYearMonth(year, month)
+                .stream()
+                .map(MovimentoMapper::from)
+                .collect(Collectors.toList());
     }
 
     @PostMapping

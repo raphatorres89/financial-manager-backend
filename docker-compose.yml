@@ -1,0 +1,14 @@
+version: "3"
+services:
+  financial-db:
+    image: mongo
+    container_name: financial-db
+    ports:
+      - 27017:27027
+  financial-api:
+    image: raphatorres89/financial-api
+    container_name: financial-api
+    ports:
+      - 8080:8080
+    links:
+      - financial-db
